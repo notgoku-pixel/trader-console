@@ -69,7 +69,7 @@ The repo is self-contained: the 11 skill folders are bundled under `skills/` and
 
 1. Create a free account at [render.com](https://render.com).
 2. Click **New + → Blueprint** and connect your GitHub account.
-3. Select `notgoku-pixel/trader-console` and the `main` branch. Render reads `render.yaml` automatically.
+3. Select `provide a name` and the `main` branch. Render reads `render.yaml` automatically.
 4. Click **Apply**. The first Docker build takes a few minutes; later pushes auto-deploy.
 
 Free tier notes:
