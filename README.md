@@ -2,6 +2,15 @@
 
 A web control panel + one-click pipeline for the 11 `day-trader-skill` Claude skills. It runs the real Python scripts, displays their output, and stores their JSON state in a local `trader/` folder. The UI uses a dark hexagon / neon theme.
 
+## Credits
+
+The trading logic is the work of **Jake Schincariol** — this repository is a web UI and orchestration layer built around it, not a new trading system.
+
+- [Jakeschincariol/trader-skill](https://github.com/Jakeschincariol/trader-skill) — the companion Claude skill collection that inspired this project.
+- [Jakeschincariol/day-trader-skill](https://github.com/Jakeschincariol/day-trader-skill) — the 11 skills bundled in `skills/` and driven by the dashboard.
+
+The upstream skill scripts are used as-is under the MIT license. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for the full notice.
+
 **Nothing here places a real order.** The Order Executor only renders tickets and records your explicit yes; actual order placement still happens through your broker connector (Alpaca / IBKR) with its own approval step.
 
 ## Run it
