@@ -13,6 +13,8 @@ const PORT = Number(process.env.PORT || 8787);
 app.use(express.json({ limit: '2mb' }));
 ensureDirs();
 
+app.get('/health', (_req, res) => res.json({ ok: true, at: new Date().toISOString() }));
+
 const sendError = (res, err, status = 500) => {
   res.status(status).json({ error: err?.message || String(err) });
 };

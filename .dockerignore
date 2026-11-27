@@ -1,0 +1,8 @@
+node_modules
+dist
+trader
+.git
+.gitignore
+*.log
+icon-preview.png
+.playwright-mcp

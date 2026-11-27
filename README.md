@@ -54,6 +54,21 @@ SEC endpoints (News 8-Ks and Earnings Analyst) need a real User-Agent: set it in
 | `PYTHON` | Override the Python executable |
 | `PORT` | API port (default `8787`) |
 
+## Deploy free on Render
+
+The repo is self-contained: the 11 skill folders are bundled under `skills/` and `render.yaml` points the app at them.
+
+1. Create a free account at [render.com](https://render.com).
+2. Click **New + → Blueprint** and connect your GitHub account.
+3. Select `notgoku-pixel/trader-console` and the `main` branch. Render reads `render.yaml` automatically.
+4. Click **Apply**. The first Docker build takes a few minutes; later pushes auto-deploy.
+
+Free tier notes:
+- The instance **sleeps after ~15 minutes of inactivity** and takes 30–60 seconds to wake on the first visit. Keeping the dashboard tab open makes it poll every few seconds and keeps it awake.
+- `trader/` state lives inside the container. It survives while the instance runs but is reset after a redeploy or if the instance is rebuilt. Treat hosted state as disposable — your local copy is the source of truth.
+- For always-on pipeline/alerts, use an Always Free VM instead (Oracle Cloud); free container hosts are not designed for nonstop background jobs.
+- If you want SEC filings in the hosted app, set a real `sec_user_agent` in the Config tab after first load; never put secrets in the repo.
+
 ## Project layout
 
 ```

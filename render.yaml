@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: trader-console
+    runtime: docker
+    plan: free
+    branch: main
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: SKILLS_DIR
+        value: /app/skills
+      - key: TRADER_DATA_DIR
+        value: /app/trader
+      - key: PORT
+        value: 8787
