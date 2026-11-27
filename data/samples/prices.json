@@ -1,0 +1,11 @@
+{
+  "as_of": "2026-10-19T14:20:00Z",
+  "source": "yahoo",
+  "note": "Free delayed quotes, 15-20 minutes behind. Sample data.",
+  "prices": { "TSLA": 366.48, "NVDA": 131.92, "AMD": 210.84 },
+  "detail": {
+    "TSLA": { "prev_close": 354.72, "time": "2026-10-19 14:05 ET", "source": "yahoo", "fetched": "2026-10-19T14:20:00Z" },
+    "NVDA": { "prev_close": 129.88, "time": "2026-10-19 14:05 ET", "source": "yahoo", "fetched": "2026-10-19T14:20:00Z" },
+    "AMD": { "prev_close": 213.41, "time": "2026-10-19 14:05 ET", "source": "yahoo", "fetched": "2026-10-19T14:20:00Z" }
+  }
+}

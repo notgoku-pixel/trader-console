@@ -1,0 +1,10 @@
+{
+  "cash": 4500.0,
+  "positions": [
+    {
+      "ticker": "NVDA",
+      "shares": 5,
+      "lots": [{ "id": "nvda-20261016", "date": "2026-10-16", "shares": 5, "cost": 128.4 }]
+    }
+  ]
+}

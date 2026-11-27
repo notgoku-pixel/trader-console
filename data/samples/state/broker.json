@@ -1,0 +1,23 @@
+{
+  "orders": [
+    {
+      "at": "2026-10-19T14:24:00Z",
+      "date": "2026-10-19",
+      "index": 1,
+      "fingerprint": "9c1f2a7b4e6d8f03",
+      "symbol": "TSLA",
+      "side": "buy",
+      "qty": 8,
+      "kind": "bracket",
+      "max_loss": 46.88,
+      "stop": 358.32,
+      "plain": "BUY 8 TSLA, stop-loss 358.32, take-profit 370.04",
+      "status": "approved",
+      "reply": "yes",
+      "paper": true,
+      "broker": "alpaca",
+      "broker_order_id": null,
+      "note": "Sample data - no order was placed by this app."
+    }
+  ]
+}

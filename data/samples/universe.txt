@@ -1,0 +1,8 @@
+AAPL|Apple Inc.
+AMD|Advanced Micro Devices, Inc.
+AXP|American Express Company
+BAC|Bank of America Corporation
+GOOGL|Alphabet Inc.
+KO|The Coca-Cola Company
+NVDA|NVIDIA Corporation
+TSLA|Tesla, Inc.
